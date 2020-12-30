@@ -1,6 +1,6 @@
 {
   "name": "react-github-stats-card-v2",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "private": false,
   "main": "./build/index.js",
   "scripts": {
@@ -27,21 +27,18 @@
     "type": "git",
     "url": "git+https://github.com/cnocon/react-github-stats-card-v2.git"
   },
-  "peerDependencies": {
-    "react": ">= 17.0.1 < 18"
-  },
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "react": "^17.0.1",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "style-loader": "^2.0.0",
-    "webpack": "^5.11.1",
+    "webpack": "^4.2",
     "webpack-cli": "^4.3.0"
   }
 }
