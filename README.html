@@ -910,14 +910,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <pre><code class="language-bash"><div>npm install react-github-stats-card-v2
 </div></code></pre>
 <h2 id="example">Example:</h2>
-<pre><code class="language-js"><div><span class="hljs-keyword">import</span> Card <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-github-stats-card-v2&#x27;</span>;
+<pre><code class="language-js"><div><span class="hljs-keyword">import</span> { Card } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-github-stats-card-v2&#x27;</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myComponent</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">username</span>=<span class="hljs-string">&#x27;cnocon&#x27;</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">{true}</span> /&gt;</span></span>
 }
 </div></code></pre>
 <h2 id="note-if-you-run-into-rate-limiting-errors-from-github-you-can-pass-your-personal-access-token-demonstrated-below-to-increase-that-limit-be-sure-to-keep-any-hardcoded-access-token-values-out-of-your-code">Note: If you run into rate limiting errors from GitHub, you can pass your personal access token, demonstrated below, to increase that limit. Be sure to keep any hardcoded access token values out of your code!</h2>
-<pre><code class="language-js"><div><span class="hljs-keyword">import</span> Card <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-github-stats-card-v2&#x27;</span>;
+<pre><code class="language-js"><div><span class="hljs-keyword">import</span> { Card } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-github-stats-card-v2&#x27;</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myComponent</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">username</span>=<span class="hljs-string">&#x27;cnocon&#x27;</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">{true}</span> <span class="hljs-attr">accessToken</span>=<span class="hljs-string">MY_ACCESS_TOKEN/</span>&gt;</span></span>

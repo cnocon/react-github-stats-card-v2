@@ -1,12 +1,12 @@
-var path = require("path");
+const path = require("path");
 
 module.exports = {
   mode: "production",
   entry: "./build/index.js",
   output: {
-    path: path.resolve("./build"),
-    publicPath: path.resolve("./build"),
+    path: path.resolve(__dirname, "build/"),
     filename: "index.js",
+    publicPath: '',
     libraryTarget: "commonjs2"
   },
   module: {
@@ -21,8 +21,5 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       }
     ]
-  },
-  externals: {
-    react: "react"
   }
 };
