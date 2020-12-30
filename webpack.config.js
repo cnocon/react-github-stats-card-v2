@@ -2,9 +2,10 @@ var path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: "./build/index.js",
   output: {
-    path: path.resolve("build"),
+    path: path.resolve("./build"),
+    publicPath: path.resolve("./build"),
     filename: "index.js",
     libraryTarget: "commonjs2"
   },
