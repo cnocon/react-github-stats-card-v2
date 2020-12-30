@@ -1,5 +1,5 @@
 {
-  "name": "@cnocon/react-github-stats-card-v2",
+  "name": "react-github-stats-card-v2",
   "version": "0.0.1",
   "private": false,
   "main": "./build/index.js",
