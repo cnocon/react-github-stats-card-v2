@@ -15,15 +15,15 @@ function Card({...props}) {
     return newString;
   }
   
-  const getUserReposData = (username, accessToken = null) => {
+  const getUserReposData = (username, accessToken = '') => {
     let options;
 
-    if (accessToken) {
+    if (accessToken && accessToken.length > 0) {
       options = {
         'method': 'GET',
         'headers': {
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': `@cnocon/github-stats-card-v2`,
+          'User-Agent': `react-github-stats-card-v2`,
           'Authorization': `token ${accessToken}`
         }
       }
@@ -32,7 +32,7 @@ function Card({...props}) {
         'method': 'GET',
         'headers': {
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': `@cnocon/github-stats-card-v2`
+          'User-Agent': `react-github-stats-card-v2`
         }
       }
     };
@@ -73,7 +73,7 @@ function Card({...props}) {
   const getUserData = (username, accessToken = null) => {
     let options;
 
-    if (accessToken) {
+    if (accessToken && accessToken.length > 0) {
       options = {
         'method': 'GET',
         'headers': {
