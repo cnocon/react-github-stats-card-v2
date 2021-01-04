@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import './card.scss';
 
-const pluralizer = (number, string) => {
-  let newString = string.slice();
-  if (number === 0 || number > 1) {
-    newString = `${string}s`;
-  }
-  return newString;
-}
-
-export default function Card({...props}) {
+function Card({...props}) {
   const {username, accessToken, theme} = props;
   const [user, setUser] = useState({});
   const [userRepos, setUserRepos] = useState([]);
   const [userLanguages, setUserLanguages] = useState({});
 
+  const pluralizer = (number, string) => {
+    let newString = string.slice();
+    if (number === 0 || number > 1) {
+      newString = `${string}s`;
+    }
+    return newString;
+  }
+  
   const getUserReposData = (username, accessToken = null) => {
     let options;
 
@@ -150,8 +150,4 @@ export default function Card({...props}) {
   )
 };
 
-Card.propTypes = {
-  username: PropTypes.string.isRequired,
-  theme: PropTypes.bool,
-  accessToken: PropTypes.string
-};
+export default Card;
