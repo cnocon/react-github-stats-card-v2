@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./build/index.js",
+  entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "build/"),
     filename: "index.js",
@@ -12,7 +12,8 @@ module.exports = {
   module: {
     rules: [
       { 
-        test: /\.js$/,
+        test: /\.js$/, 
+        exclude: /node_modules/, 
         use: ["babel-loader"],
       },
       {
