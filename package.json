@@ -1,6 +1,6 @@
 {
   "name": "react-github-stats-card-v2",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "private": false,
   "main": "./src/index.js",
   "scripts": {
