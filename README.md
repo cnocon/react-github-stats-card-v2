@@ -2,6 +2,7 @@
 
 <img alt="Screenshot of component" src="https://raw.githubusercontent.com/cnocon/react-github-stats-card-v2/master/component-screenshot.png" width="320"/>
 
+[Demo Site here](https://react-github-stats-card-v2-demo.netlify.app/)
 
 ### Installation
 
