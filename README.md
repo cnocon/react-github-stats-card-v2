@@ -1,4 +1,4 @@
-## React GitHub Stats Card (v2)
+## React GitHub Stats Card (v2 is for react 17+ and react-dom 17+)
 
 <img alt="Screenshot of component" src="https://raw.githubusercontent.com/cnocon/react-github-stats-card-v2/master/component-screenshot.png" width="320"/>
 
