@@ -1,6 +1,6 @@
 {
   "name": "react-github-stats-card-v2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "GitHub Stats card component for React applications.",
   "main": "dist/index.js",

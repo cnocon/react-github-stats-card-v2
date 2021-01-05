@@ -78,7 +78,7 @@ function Card({...props}) {
         'method': 'GET',
         'headers': {
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': `@cnocon/react-github-stats-card-v2`,
+          'User-Agent': `react-github-stats-card-v2`,
           'Authorization': `token ${accessToken}`
         }
       };
@@ -87,7 +87,7 @@ function Card({...props}) {
         'method': 'GET',
         'headers': {
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': `@cnocon/github-stats-card-v2`
+          'User-Agent': `react-github-stats-card-v2`
         }
       };
     }
@@ -117,7 +117,6 @@ function Card({...props}) {
   const following = <li>Following <b>{user.following}</b> {pluralizer(parseInt(user.following), `member`)}</li>;
   const openIssues = <li><b>{openIssuesCount}</b>&nbsp;{pluralizer(parseInt(openIssuesCount), `open issue`)}</li>;
   const company = !user.company ? `` : <p>Currently at {user.company}</p>;
-  const location = !user.location ? `` : <p>{user.location}</p>;
   
   const profileLink = <p><a href={user.html_url} target='_blank' rel='noreferrer nofollow'>@{user.login} on GitHub</a></p>
   const fullName = !user.name ? `` : <p><b>{user.name}</b></p>;
@@ -128,6 +127,7 @@ function Card({...props}) {
   const totalYears = Math.round(relativeDate / 1000 / 60 / 60 / 24 / 365);
   const yearsOnGitHub = <p>{totalYears} {pluralizer(totalYears, 'Year')} of Membership</p>;
   const footer = <footer><section>{profileLink}{yearsOnGitHub}{company}</section><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" alt="Octocat"/></footer>;
+  const rule = languagesMarkup.length ? <hr/> : ``;
 
 
   useEffect(() => {
@@ -144,7 +144,7 @@ function Card({...props}) {
     <div className={theme ? 'github-stats-card' : ''}>
       <header>
         <h3><a href={user.html_url} target="_blank" rel="noopener nofollow">@{username}</a>&nbsp;on GitHub</h3>{user && user.bio ? <h4>{user.bio}</h4> : ``}<h5><span><b>{user.public_repos}</b>Public Repos</span><span>|</span><span><b>{user.public_gists}</b>Public Gists</span></h5></header>
-      <div><p><b>Top Languages</b></p><ol>{languagesMarkup}</ol><ul>{openIssues}{watchers}{stargazers}{followers}{following}</ul></div>
+      <div>{languagesMarkup.length ? <p><b>Top Languages</b></p> : ``}<ol>{languagesMarkup}</ol>{rule}<ul>{openIssues}{watchers}{stargazers}{followers}{following}</ul></div>
       {footer}
     </div>
   )
