@@ -1,3 +1,4 @@
 // /src/index.js
-const { Card } = './components/Card'
-export { Card }
+
+import { Card } from './components/Card'
+export default Card;

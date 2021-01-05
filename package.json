@@ -1,6 +1,6 @@
 {
   "name": "react-github-stats-card-v2",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "MIT",
   "description": "GitHub Stats card component for React applications.",
   "main": "dist/index.js",
@@ -24,7 +24,6 @@
     "Stats"
   ],
   "author": "Cristin O'Connor <her@cristin.io>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cnocon/react-github-stats-card-v2/issues"
   },
