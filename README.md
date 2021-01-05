@@ -1,7 +1,9 @@
-# React GitHub Stats Card (v2)
-![Screenshot of component](https://raw.githubusercontent.com/cnocon/react-github-stats-card-v2/master/component-screenshot.png)
+## React GitHub Stats Card (v2)
 
-## Installation
+<img alt="Screenshot of component" src="https://raw.githubusercontent.com/cnocon/react-github-stats-card-v2/master/component-screenshot.png" width="320"/>
+
+
+### Installation
 
 1. Install the package via npm.
 ```bash
@@ -27,7 +29,7 @@ import { Card } from 'react-github-stats-card-v2';
 />
 ```
 
-## Using Storybook
+### Using Storybook
 
 1. Clone this repository and cd into the root directory:
 ```bash
