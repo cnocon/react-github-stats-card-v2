@@ -1,4 +1,5 @@
 # React GitHub Stats Card (v2)
+![Screenshot of component](https://raw.githubusercontent.com/cnocon/react-github-stats-card-v2/master/component-screenshot.png)
 
 ## Installation
 
