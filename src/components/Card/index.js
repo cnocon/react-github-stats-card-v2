@@ -106,7 +106,7 @@ function Card({...props}) {
 
   const topLanguages = sortedLanguages.length >= 3 ? sortedLanguages.slice(0,3) : sortedLanguages;
   const languagesMarkup = topLanguages.map(language => (
-    <li><b>{language[0]}</b><small>{language[1]} {pluralizer(parseInt(language[1]), 'repo')}</small></li>
+    <li key={`${language[0]}`}><b>{language[0]}</b><small>{language[1]} {pluralizer(parseInt(language[1]), 'repo')}</small></li>
   ));
   const watchersCount = userRepos.reduce((acc, r) => (acc + r.watchers_count), 0);
   const stargazersCount = userRepos.reduce((acc, r) => (acc + r.stargazers_count), 0);
