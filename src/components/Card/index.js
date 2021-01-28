@@ -3,7 +3,7 @@ import { pluralizer, sum } from './CardUtils';
 import './card.scss';
 
 function Card({...props}) {
-  const {username, accessToken, theme} = props;
+  const {username, accessToken, theme, themeColor} = props;
   const [user, setUser] = useState({});
   const [userRepos, setUserRepos] = useState([]);
   const [userLanguages, setUserLanguages] = useState({});
@@ -29,7 +29,7 @@ function Card({...props}) {
         }
       }
     };
-  
+
     fetch(`https://api.github.com/users/${username}/repos`, options).then(response => {
         return response.json();
       }).then(data => {
@@ -84,7 +84,7 @@ function Card({...props}) {
         }
       };
     }
-  
+
     fetch(`https://api.github.com/users/${username}`, options)
       .then(response => {
         return response.json();
@@ -117,7 +117,7 @@ function Card({...props}) {
   }, []);
 
   return (
-    <div className={theme ? 'github-stats-card' : ''}>
+    <div className={theme ? `github-stats-card ${themeColor || 'blue'}` : ''}>
       <header>
         <h3><a href={user.html_url} target="_blank" rel="noopener nofollow">@{username}</a>&nbsp;on GitHub</h3>
         {user && user.bio ? <h4>{user.bio}</h4> : ``}

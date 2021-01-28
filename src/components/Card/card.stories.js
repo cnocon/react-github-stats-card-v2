@@ -7,5 +7,6 @@ export const card = () => {
   const username = text('username', 'cnocon')
   const accessToken = text('access token', '')
   const theme = boolean('theme', true)
-  return <Card username={username} theme={theme} accessToken={accessToken}></Card>
+  const themeColor = text('themeColor', 'blue')
+  return <Card username={username} theme={theme} accessToken={accessToken} themeColor={themeColor}></Card>
 }

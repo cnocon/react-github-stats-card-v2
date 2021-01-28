@@ -16,6 +16,26 @@
   box-shadow: 5px 10px 20px -10px rgba(0,0,0,.2);
   color: #24292e;
 
+  &.blue h5 {
+    background-color: #0366d6;
+    color: #fff;
+  }
+
+  &.purple h5 {
+    background-color: #7b03d6;
+    color: #fff;
+  }
+
+  &.green h5 {
+    background-color: #007135;
+    color: #fff;
+  }
+
+  &.pink h5 {
+    background-color: #9c337d;
+    color: #fff;
+  }
+
   header {
     display: flex;
     flex-wrap: wrap;
@@ -26,9 +46,9 @@
     padding: 20px 0 0;
     background-color: #f6f8fa;
     color: #24292e;
-  
 
-    h3 { 
+
+    h3 {
       display: block;
       text-align: center;
       width: 100%;
@@ -37,7 +57,7 @@
       font-weight: 600;
       padding: 0 0 20px;
       margin: 0;
-    
+
       a {
         display: inline-block;
         text-decoration: none;
@@ -68,15 +88,13 @@
     h5 {
       display: flex;
       width: 100%;
-      background-color: #0366d6;
-      color: #fff;
       justify-content: center;
       font-weight: 400;
       padding: 10px 0;
       margin: 0;
       box-sizing: border-box;
       font-size: 14px;
-      
+
       span {
         display: flex;
         flex-direction: row;
@@ -86,7 +104,7 @@
         font-size: 13px;
         line-height: 18px;
         vertical-align: middle;
-        
+
         b { margin-right: 3px; font-size: 16px; }
       }
     }
@@ -100,8 +118,8 @@
     border: 0;
     border-bottom: 1px solid #efefef;
   }
-  
-  ol, 
+
+  ol,
   ul {
     max-width: 100%;
     display: flex;
@@ -126,16 +144,16 @@
       &:last-of-type { order: 3; }
     }
   }
-  
-  ul { 
-    list-style: none; 
+
+  ul {
+    list-style: none;
 
 
     li {
       &:last-of-type {
         margin-bottom: 0;
       }
-      
+
       b {
         font-size : 13px;
         font-family: Menlo, Monaco, monospace;
@@ -147,11 +165,11 @@
     margin: 5px 0;
     color: #24292e;
 
-    small { 
+    small {
       display: block;
       font-size: 12px;
     }
-    
+
     b { font-size: 13px; }
   }
 
@@ -169,10 +187,10 @@
     padding: 10px 15px;
   }
 
-  div p { 
-    font-weight: 400; 
-    font-size: 14px; 
-    
+  div p {
+    font-weight: 400;
+    font-size: 14px;
+
     b { font-weight: 400; font-size: 15px; }
   }
 
@@ -184,20 +202,20 @@
     box-sizing: border-box;
     background-color: #f6f8fa;
     color: #24292e;
-  
+
     img {
       max-width: 100px;
       box-sizing: border-box;
       display:block;
       margin: 0 15px 0 0;
     }
-    
+
     section {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
       padding: 10px 15px;
-      
+
       p {
         margin: 0;
         padding-bottom: 2.5px;
@@ -205,12 +223,12 @@
         line-height: 14px;
         text-align: left;
         color: #586069;
-        
+
         b { text-transform: uppercase; color: #586069; }
       }
     }
 
-    a { 
+    a {
       color: #586069;
       text-decoration:none;
       font-weight: 600;
